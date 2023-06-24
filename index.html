@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Новости</a></li>
+                <li class="dropdown">
+                    <a href="#">Образовательный портфель</a>
+                    <ul class="submenu">
+                        <li><a href="#">Заглушка 1</a></li>
+                        <li><a href="#">Заглушка 2</a></li>
+                        <li><a href="#">Заглушка 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Цифровой портфель</a>
+                    <ul class="submenu">
+                        <li><a href="#">Заглушка 1</a></li>
+                        <li><a href="#">Заглушка 2</a></li>
+                        <li><a href="#">Заглушка 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Партнерство</a></li>
+
+                <li><a href="#">Об институте</a></li>
+                <li><a href="#">Контакты</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- CONTENT -->
+    <div id="content">
+        <!-- switchpic -->
+        <div class="switchpic">
+            <div class="switchpic-slides">
+              <div class="switchpic-slide active" style="background-image: url('img1.png')">
+                <div class="switchpic-slide-content">
+                  <h2>Заголовок элемента 1</h2>
+                  <p>Описание элемента 1</p>
+                  <a href="path/to/other-page.html" class="switchpic-slide-btn">Перейти на другую страницу</a>
+                </div>
+              </div>
+              <div class="switchpic-slide" style="background-image: url('img2.png')">
+                <div class="switchpic-slide-content">
+                  <h2>Заголовок элемента 2</h2>
+                  <p>Описание элемента 2</p>
+                  <a href="path/to/other-page.html" class="switchpic-slide-btn">Перейти на другую страницу</a>
+                </div>
+              </div>
+              <div class="switchpic-slide" style="background-image: url('image.png')">
+                <div class="switchpic-slide-content">
+                  <h2>Заголовок элемента 3</h2>
+                  <p>Описание элемента 3</p>
+                  <a href="path/to/other-page.html" class="switchpic-slide-btn">Перейти на другую страницу</a>
+                </div>
+              </div>
+            </div>
+            <div class="switchpic-dots">
+              <span class="switchpic-dot active"></span>
+              <span class="switchpic-dot"></span>
+              <span class="switchpic-dot"></span>
+            </div>
+          </div>
+
+        <!-- maincontent -->
+        <div id="maincontent">
+            <div id="news">
+                <h3>Новости</h3>
+                <div class="cards">
+                    <div class="card">
+                        <a href="#">
+                            <div class="image" style="background-image: url('image.png')"></div>
+                            <h3>Заголовок 1</h3>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <div class="image" style="background-image: url('image.png')"></div>
+                            <h3>Заголовок 2</h3>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <div class="image" style="background-image: url('image.png')"></div>
+                            <h3>Заголовок 3</h3>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <div class="image" style="background-image: url('image.png')"></div>
+                            <h3>Заголовок 4</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="education">
+            <h3>Образовательный портфель</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="education1.jpg" alt="education1" />
+                    <div class="text">
+                        <h4>Направление 1</h4>
+                        <p>Описание направления 1</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="education2.jpg" alt="education2" />
+                    <div class="text">
+                        <h4>Направление 2</h4>
+                        <p>Описание направления 2</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="education3.jpg" alt="education3" />
+                    <div class="text">
+                        <h4>Направление 3</h4>
+                        <p>Описание направления 3</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="education4.jpg" alt="education4" />
+                    <div class="text">
+                        <h4>Направление 4</h4>
+                        <p>Описание направления 4</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <p>Новая заявка</p>
+            <a href="#">Кнопка</a>
+        </div>
+
+        <div id="digital">
+            <h3>Цифровой портфель</h3>
+            <nav>
+                <ul>
+                    <li><a href="#">Элемент меню 1</a></li>
+                    <li><a href="#">Элемент меню 2</a></li>
+                    <li><a href="#">Элемент меню 3</a></li>
+                </ul>
+            </nav>
+            <div class="cards">
+                <div class="card">
+                    <img src="digital1.jpg" alt="digital1" />
+                    <div class="text">
+                        <h4>Текст 1</h4>
+                        <p>Описание 1</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="digital2.jpg" alt="digital2" />
+                    <div class="text">
+                        <h4>Текст 2</h4>
+                        <p>Описание 2</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="digital3.jpg" alt="digital3" />
+                    <div class="text">
+                        <h4>Текст 3</h4>
+                        <p>Описание 3</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="digital4.jpg" alt="digital4" />
+                    <div class="text">
+                        <h4>Текст 4</h4>
+                        <p>Описание 4</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <p>Новая заявка</p>
+            <a href="#">Кнопка</a>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- FOOTER -->
+    <footer>
+        <div id="info">
+            <p>О нас</p>
+        </div>
+        <div id="social">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
