@@ -113,22 +113,17 @@ body {
 
 #news .card h3 {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  margin: 0;
-  font-size: 16px;
+  bottom: 0px;
+  left: 0px;
+  width: calc(100% - 40px);
+  padding: 20px;
+  font-size: 25px;
   color: #ffffff;
-  background-color: rgba(0, 0, 0 , 0.7);
-  transition: background-color 0.5s;
-}
-
-#news .card:hover h3 {
-  background-color: rgba(0, 0, 0, 0.5);
+  
 }
 #education {
     background-color: #ffffff;
+    margin-top: 30px;
 }
 
 #education h3 {
@@ -137,14 +132,22 @@ body {
 }
 
 #education .cards {
+  margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+  
 }
 
+.cards > div:nth-child(even ) {
+  justify-self: right; /* Правое выравнивание для элементов во второй колонке */
+}
 #education .card {
-  width: 20%;
-    background-color: #f3f3f3;
+    width: calc(100% - 60px);
+    height: 250px;
+    border-radius: 7px;
+    box-shadow: 0 0 4px rgba(33, 33, 33, 0.204); 
+    background-color: #ffffff;
     padding: 20px;
 }
 
@@ -172,22 +175,6 @@ body {
 #education p {
     margin-top: 20px;
     font-size: 16px;
-}
-
-#education a {
-    display: inline-block;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-#education a:hover {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
 }
 
 #digital {
@@ -323,15 +310,22 @@ footer a {
   margin-top: 13px;
   margin-right: 20px;
 }
+.location{
+  margin-bottom: 15px;
+}
 .left-content a{
   text-decoration: none;
-  font-size: 26px;
+  font-size: 22px;
 }
 .left-content img{
   filter:invert(100%);
 }
+.left-content p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .left-content #address{
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 
@@ -401,7 +395,7 @@ footer a {
   .switchpic {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
   }
 
