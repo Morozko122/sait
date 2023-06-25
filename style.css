@@ -57,7 +57,7 @@ body {
   color: #626262;
   text-decoration: none;
 }
-#news a , #education a{
+#news a , #education li a{
   display: inline-block;
   background-color: #ffffff;
   color: #000000;
@@ -85,11 +85,16 @@ body {
 #news .card {
   position: relative;
   width: 25%;
-  height: 400px;
+  height: calc(width- 10px);
   margin-right: 20px;
   border-radius: 10px;
   overflow: hidden;
   background-color: #f3f3f3;
+}
+#news .card::before {
+  content: "";
+  display: block;
+  padding-top: 110%; /* Установите высоту псевдоэлемента в два раза больше ширины элемента */
 }
 
 #news .card:last-child {
@@ -139,8 +144,8 @@ body {
   
 }
 
-.cards > div:nth-child(even ) {
-  justify-self: right; /* Правое выравнивание для элементов во второй колонке */
+.cards > div:nth-child(even) {
+  justify-self: right; 
 }
 #education .card {
     width: calc(100% - 60px);
@@ -159,23 +164,30 @@ body {
 }
 
 #education .card .text {
+    width: 60%;
     margin-bottom: 10px;
 }
 
 #education .card .text h4 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 5px;
 }
 
 #education .card .text p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.5;
     margin-bottom: 10px;
+}
+
+#education .text a{
+  justify-items: end;
 }
 
 #education p {
     margin-top: 20px;
     font-size: 16px;
 }
+
 
 #digital {
     background-color: #ffffff;
@@ -384,6 +396,7 @@ footer a {
   nav .dropdown .submenu {
     display: none;
     position: absolute;
+    margin-top: 20px;
     top: 100%;
     left: 0;
     z-index: 2;
