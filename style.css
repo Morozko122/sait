@@ -263,20 +263,24 @@ body {
     font-size: 16px;
 }
 
-#digital a {
-    display: inline-block;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-top: 10px;
-    text-decoration: none;
+
+.digital-a {
+  width: 200px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #006C4F;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
-#digital a:hover {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+.digital-a:hover {
+  background-color: #000;
+  color: #fff;
 }
 #digital .neworder{
     margin-top: 30px;
@@ -433,6 +437,7 @@ footer a {
     background-repeat: no-repeat;
     background-size: cover;
     display: none;
+
   }
   
   .switchpic-slide.active {
@@ -446,6 +451,8 @@ footer a {
     transform: translateY(-50%);
     color: #fff;
     z-index: 2;
+    padding-left: 60px;
+
   }
 
   .switchpic-slide-content h2 {
