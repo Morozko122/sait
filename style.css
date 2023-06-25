@@ -349,6 +349,7 @@ footer a {
   
   .logo {
     flex-shrink: 0;
+    margin-left: 50px;
   }
   nav {
     flex-grow: 1;
