@@ -3,50 +3,100 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
     font-family: Arial, sans-serif;
 }
 
 #content {
-    max-width: 100%;
-}
-
-#maincontent {
+  width: 100%;
     display: grid;
     justify-items: left;
 }
-
+#maincontent{
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  width: calc(100% - 140px);
+}
 #news {
     background-color: #ffffff;
-    padding: 20px;
 }
-
-#news h3 {
+#news h2 , #education h2 {
+  font-size: 26px;
+}
+#news li, #education li{
+  font-size: 15px;
+}
+#news h3,  #education h3 {
     font-size: 24px;
     margin-bottom: 20px;
 }
-
-.cards {
-  display: flex;
-  justify-content: left;
+#news nav,  #education nav {
+  flex-grow: 1;
+  text-align: left;
+}
+#news nav ul,  #education nav ul {
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#news nav li,  #education nav li  {
+  position: relative;
 }
 
-.card {
+#news nav a,  #education nav a {
+  display: block;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #626262;
+  text-decoration: none;
+}
+#news a , #education a{
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+}
+
+#news a:hover, #education a:hover{
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #615e5e;
+}
+
+#news .cards {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+}
+
+#news .card {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 25%;
+  height: 400px;
   margin-right: 20px;
   border-radius: 10px;
   overflow: hidden;
   background-color: #f3f3f3;
 }
 
-.card:last-child {
+#news .card:last-child {
   margin-right: 0;
 }
 
-.card .image {
+#news .card .image {
   position: absolute;
   top: 0;
   left: 0;
@@ -57,11 +107,11 @@ body {
   transition: transform 0.5s;
 }
 
-.card:hover .image {
+#news .card:hover .image {
   transform: scale(1.1);
 }
 
-.card h3 {
+#news .card h3 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -74,12 +124,11 @@ body {
   transition: background-color 0.5s;
 }
 
-.card:hover h3 {
+#news .card:hover h3 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 #education {
     background-color: #ffffff;
-    padding: 20px;
 }
 
 #education h3 {
@@ -94,6 +143,7 @@ body {
 }
 
 #education .card {
+  width: 20%;
     background-color: #f3f3f3;
     padding: 20px;
 }
@@ -142,7 +192,7 @@ body {
 
 #digital {
     background-color: #ffffff;
-    padding: 20px;
+
 }
 
 #digital h3 {
@@ -183,6 +233,7 @@ body {
 }
 
 #digital .card {
+  width: 20%;
     background-color: #f3f3f3;
     padding: 20px;
 }
@@ -282,22 +333,9 @@ footer a {
 .left-content #address{
   margin-top: 40px;
 }
-#news,
-#education,
-#digital {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-#education p {
-  margin-top: 20px;
-  font-size: 16px;
-}
 
 
-  
+
   /* GOVNO ZALUPA */
   header {
     display: flex;
