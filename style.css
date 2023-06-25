@@ -230,46 +230,58 @@ body {
 }
 
 footer {
-    background-color: #00150f;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 160px;
+  background-color: #00150f;
+  color: #ffffff;
+  display: flex;
+  align-items:start;
+  justify-content: space-between;
+  padding: 20px;
+  height: 200px;
+
 }
-
-#info p {
-    font-size: 16px;
-    margin: 0;
-    color: #fff;
+footer a {
+  color: #ffffff;
 }
-
-#social ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
+.social-links a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: right;
+    border: 1px solid #00150f;
+    border-radius: 12px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    transition: 0.3s ease-out;
 }
-
-#social li {
-    margin-left: 20px;
+.social-links img {
+  filter:invert(100%);
 }
-
-#social li a {
-    font-size: 16px;
-    color: #000000;
-    text-decoration: none;
-    padding: 5px;
+.terms{
+  font-size: 14px;
 }
-
-#social li a:hover {
-    background-color: #f3f3f3;
-    border-radius: 5px;
+.social-links a:hover {
+  background: #006c4f;
+  color: #00150f;
+  transition: 0.3ms;
 }
-
-
-
+.left-content{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.right-content{
+  margin-top: 13px;
+  margin-right: 20px;
+}
+.left-content a{
+  text-decoration: none;
+  font-size: 26px;
+}
+.left-content img{
+  filter:invert(100%);
+}
+.left-content #address{
+  margin-top: 40px;
+}
 #news,
 #education,
 #digital {
