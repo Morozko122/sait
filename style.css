@@ -223,8 +223,17 @@ body {
   margin-top: 20px;
   font-size: 16px;
 }
+#education .programSS {
+  margin-top: 80px;
+  margin-bottom: 80px;
 
-
+  justify-items: center;
+  text-align: center;
+}
+#education .programSS img{
+  height: 110px;
+  width:  110px;
+}
 #digital {
   background-color: #ffffff;
 
@@ -320,9 +329,14 @@ body {
 }
 
 #digital .neworder {
-  margin-top: 30px;
   justify-items: center;
   text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+#digital .neworder img{
+  height: 120px;
+  width:  120px;
 }
 
 footer {
@@ -409,7 +423,7 @@ header {
 }
 
 header nav {
-  margin-left: 20px;
+  margin-left: 160px;
   margin-right: auto;
 }
 
