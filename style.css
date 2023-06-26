@@ -29,14 +29,7 @@ line-height: 150%;
 letter-spacing: -0.9px;
 text-transform: uppercase;
 }
-#news li, #education li{
 
-  color: #616569;
-font-size: 18px;
-font-family:"IstokWeb";
-line-height: 150%;
-letter-spacing: -0.27px;
-}
 #news h3,  #education h3 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -68,10 +61,14 @@ letter-spacing: -0.27px;
   color: #626262;
   text-decoration: none;
 }
-#news a , #education li a{
+#news li a , #education li a{
   display: inline-block;
   background-color: #ffffff;
-  color: #000000;
+  color: #616569;
+font-size: 18px;
+font-family:"IstokWeb";
+line-height: 150%;
+letter-spacing: -0.27px;
   border-radius: 10px;
   margin-top: 10px;
   text-decoration: none;
@@ -373,9 +370,6 @@ footer a {
   margin-top: 20px;
 }
 
-
-
-  /* GOVNO ZALUPA */
   header {
     display: flex;
     justify-content: center;
@@ -386,19 +380,19 @@ footer a {
     padding: 0 20px;
   }
   
-  nav {
+  header nav {
     margin-left: 20px;
     margin-right: auto;
   }
   
-  .logo {
+  header .logo {
     margin-right: 65px;
     margin-left: 50px;
     margin-top: 25px;
     margin-bottom: 25px;
   }
   
-  nav ul {
+  header  nav ul {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -407,12 +401,12 @@ footer a {
     padding: 0;
   }
   
-  nav li {
+  header nav li {
     position: relative;
     font-family: "IstokWebBold";
   }
   
-  nav a {
+  header nav a {
     display: block;
     padding: 20px;
     color: #333333;
@@ -422,8 +416,7 @@ footer a {
 
   
   /* Стилизуем выпадающее меню */
-  nav .dropdown .submenu {
-    font-family:"IstokWeb";
+  header nav .dropdown .submenu {
     display: none;
     position: absolute;
     margin-top: 20px;
@@ -438,7 +431,7 @@ footer a {
     margin-top: 35px;
   }
   
-  nav .dropdown:hover .submenu {
+  header nav .dropdown:hover .submenu {
     display: block;
   }
 
