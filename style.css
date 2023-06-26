@@ -1,44 +1,53 @@
 /* Основные стили */
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
 }
 
 #content {
   width: 100%;
-    display: grid;
-    justify-items: left;
+  display: grid;
+  justify-items: left;
 }
-#maincontent{
+
+#maincontent {
   margin-top: 40px;
   margin-left: 70px;
   margin-right: 70px;
   width: calc(100% - 140px);
 }
+
 #news {
-    background-color: #ffffff;
-}
-#news h2 , #education h2 {
-  color: #2D3237;
-font-size: 26px;
-font-family: "IstokWebBold";
-line-height: 150%;
-letter-spacing: -0.9px;
-text-transform: uppercase;
+  background-color: #ffffff;
 }
 
-#news h3,  #education h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+#news h2,
+#education h2 {
+  color: #2D3237;
+  font-size: 26px;
+  font-family: "IstokWebBold";
+  line-height: 150%;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
 }
-#news nav,  #education nav {
+
+#news h3,
+#education h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#news nav,
+#education nav {
   flex-grow: 1;
   text-align: left;
 }
-#news nav ul,  #education nav ul {
+
+#news nav ul,
+#education nav ul {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -46,15 +55,18 @@ text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
-#news nav li,  #education nav li  {
+
+#news nav li,
+#education nav li {
   position: relative;
 }
 
-#news nav a,  #education nav a {
+#news nav a,
+#education nav a {
   background-color: #ffffff;
   color: #616569;
   font-size: 18px;
-  font-family:"IstokWeb";
+  font-family: "IstokWeb";
   line-height: 150%;
   letter-spacing: -0.27px;
   border-radius: 10px;
@@ -73,7 +85,8 @@ text-transform: uppercase;
 }
 
 
-#news nav a:hover, #education nav a:hover{
+#news nav a:hover,
+#education nav a:hover {
   background-color: transparent;
   color: #4b4b4b;
   border: 1px solid #615e5e;
@@ -96,10 +109,12 @@ text-transform: uppercase;
   overflow: hidden;
   background-color: #f3f3f3;
 }
+
 #news .card::before {
   content: "";
   display: block;
-  padding-top: 110%; /* Установите высоту псевдоэлемента в два раза больше ширины элемента */
+  padding-top: 110%;
+  /* Установите высоту псевдоэлемента в два раза больше ширины элемента */
 }
 
 #news .card:last-child {
@@ -129,39 +144,41 @@ text-transform: uppercase;
   padding: 20px;
   font-size: 25px;
   color: #ffffff;
-  
+
 }
+
 #education {
-    background-color: #ffffff;
-    margin-top: 30px;
+  background-color: #ffffff;
+  margin-top: 30px;
 }
 
 #education h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 #education .cards {
   margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
 }
 
-.cards > div:nth-child(even) {
-  justify-self: right; 
+.cards>div:nth-child(even) {
+  justify-self: right;
 }
+
 #education .card {
-    width: calc(100% - 60px);
-    height: 250px;
-    border-radius: 7px;
-background: #FFF;
-box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
-    padding: 20px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: right center;
+  width: calc(100% - 60px);
+  height: 250px;
+  border-radius: 7px;
+  background: #FFF;
+  box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
+  padding: 20px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .card img {
@@ -174,111 +191,112 @@ box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
 }
 
 #education .card .text {
-    width: 60%;
-    margin-bottom: 10px;
+  width: 60%;
+  margin-bottom: 10px;
 }
 
 #education .card .text h4 {
-    font-size: 22px;
-    margin-bottom: 5px;
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 
 #education .card .text p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
-#education .bottomtext{
+#education .bottomtext {
   position: absolute;
   bottom: 20px;
 
 }
-#education .bottomtext a{
+
+#education .bottomtext a {
   text-decoration: none;
-  color:#000;
+  color: #000;
   font-size: 20px;
 }
 
 
 #education p {
-    margin-top: 20px;
-    font-size: 16px;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 
 #digital {
-    background-color: #ffffff;
+  background-color: #ffffff;
 
 }
 
 #digital h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 #digital nav {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #digital nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 #digital nav li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 #digital nav li a {
-    font-size: 16px;
-    color: #000000;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #digital nav li a:hover {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 #digital .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 
 #digital .card {
   width: 20%;
-    background-color: #f3f3f3;
-    padding: 20px;
+  background-color: #f3f3f3;
+  padding: 20px;
 }
 
 #digital .card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 #digital .card .text {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #digital .card .text h4 {
-    font-size: 20px;
-    margin-bottom: 5px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 #digital .card .text p {
-    font-size: 16px;
-    margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 #digital p {
-    margin-top: 20px;
-    font-size: 16px;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 
@@ -300,235 +318,264 @@ box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
   background-color: #000;
   color: #fff;
 }
-#digital .neworder{
-    margin-top: 30px;
-    justify-items: center;
-    text-align: center;
+
+#digital .neworder {
+  margin-top: 30px;
+  justify-items: center;
+  text-align: center;
 }
 
 footer {
   background-color: #00150f;
   color: #ffffff;
   display: flex;
-  align-items:start;
+  align-items: start;
   justify-content: space-between;
   padding: 20px;
   height: 200px;
 
 }
+
 footer a {
   color: #ffffff;
 }
+
 .social-links a {
-    text-align: center;
-    width: 48px;
-    height: 48px;
-    float: right;
-    border: 1px solid #00150f;
-    border-radius: 12px;
-    margin: 0 10px 10px 0;
-    padding: 6px;
-    transition: 0.3s ease-out;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  float: right;
+  border: 1px solid #00150f;
+  border-radius: 12px;
+  margin: 0 10px 10px 0;
+  padding: 6px;
+  transition: 0.3s ease-out;
 }
+
 .social-links img {
-  filter:invert(100%);
+  filter: invert(100%);
 }
-.terms{
+
+.terms {
   font-size: 14px;
 }
+
 .social-links a:hover {
   background: #006c4f;
   color: #00150f;
   transition: 0.3ms;
 }
-.left-content{
+
+.left-content {
   margin-top: 20px;
   margin-left: 20px;
 }
-.right-content{
+
+.right-content {
   margin-top: 13px;
   margin-right: 20px;
 }
-.location{
+
+.location {
   margin-bottom: 15px;
 }
-.left-content a{
+
+.left-content a {
   text-decoration: none;
   font-size: 22px;
 }
-.left-content img{
-  filter:invert(100%);
+
+.left-content img {
+  filter: invert(100%);
 }
-.left-content p{
+
+.left-content p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.left-content #address{
+
+.left-content #address {
   margin-top: 20px;
 }
 
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 130px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 0 20px;
-  }
-  
-  header nav {
-    margin-left: 20px;
-    margin-right: auto;
-  }
-  
-  header .logo {
-    margin-right: 65px;
-    margin-left: 50px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  
-  header  nav ul {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav li {
-    position: relative;
-  }
-  
-  header nav a {
-    display: block;
-    padding: 20px;
-    color: #333333;
-    text-decoration: none;
-  }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 109px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+
+header nav {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+header .logo {
+  margin-right: 65px;
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+header nav ul {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  position: relative;
+  height: 109px;
+}
+
+header nav a {
+  font-family: "IstokWeb";
+  display: block;
+  padding-left: 15px;
+  text-decoration: none;
+  padding-top: 47px;
+  padding-right: 15px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+}
 
 
-  
-  /* Стилизуем выпадающее меню */
-  header nav .dropdown .submenu {
-    display: none;
-    position: absolute;
-    margin-top: 20px;
-    top: 100%;
-    left: 0;
-    z-index: 2;
-    min-width: 200px;
-    background-color: #e9e9e9;
-    border: 1px solid #e8e8e8;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 0;
-    margin-top: 35px;
-  }
-  
-  header nav .dropdown:hover .submenu {
-    display: block;
-  }
 
-  .switchpic {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-  }
+/* Стилизуем выпадающее меню */
+header nav .dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  min-width: 200px;
+  background-color: #e9e9e9;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0;
 
-  .switchpic-slides {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
+}
+header nav .dropdown .submenu li{
+  height: 40px;
+}
+header nav .dropdown .submenu a{
+  padding: 0;
+  margin: 20px;
+  font-family: "IstokWeb";
+  font-weight: 400;
+}
 
-  .switchpic-slide {
-    position: relative;
-    flex: 1;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: none;
+header nav .dropdown:hover .submenu {
+  display: block;
+}
 
-  }
-  
-  .switchpic-slide.active {
-    display: block;
-  }
+.switchpic {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
 
-  .switchpic-slide-content {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    color: #fff;
-    z-index: 2;
-    padding-left: 60px;
+.switchpic-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
 
-  }
+.switchpic-slide {
+  position: relative;
+  flex: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
 
-  .switchpic-slide-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
+}
 
-  .switchpic-slide-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+.switchpic-slide.active {
+  display: block;
+}
 
-  .switchpic-slide-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-  }
+.switchpic-slide-content {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 2;
+  padding-left: 60px;
 
-  .switchpic-slide-btn:hover {
-    background-color: #000;
-    color: #fff;
-  }
+}
 
-  .switchpic-dots {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.switchpic-slide-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
-  .switchpic-dot {
-    width: 12px;
-    height: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
+.switchpic-slide-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
-  .switchpic-dot.active {
-    transform: scale(1.2);
-    background-color: #fff;
-  }
-  @font-face {
-    font-family: "IstokWeb"; 
-    src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    } 
-    @font-face {
-      font-family: "IstokWebBold"; 
-      src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype"); 
-      font-style: normal; 
-      font-weight: normal; 
-      } 
+.switchpic-slide-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.switchpic-slide-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.switchpic-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switchpic-dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.switchpic-dot.active {
+  transform: scale(1.2);
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: "IstokWeb";
+  src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "IstokWebBold";
+  src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
