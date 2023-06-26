@@ -1,6 +1,7 @@
 /* Основные стили */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 
 body {
@@ -22,27 +23,57 @@ body {
   margin-right: 70px;
   width: calc(100% - 140px);
 }
-#maincontent .activee{
-  color: #2D3237;
-  font-size: 26px;
-  font-family: "IstokWebBold";
-  line-height: 150%;
-  letter-spacing: -0.9px;
-  text-transform: uppercase;
-}
+
 #news {
   background-color: #ffffff;
 }
 
-.activ{
+#news .activee , #education .activee {
+  background-color: #ffffff;
+  width: auto;
+  height: auto;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
   color: #2D3237;
   font-size: 30px;
-  font-family: "IstokWebBold";
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.9px;
   text-transform: uppercase;
+  padding: 0;
 }
-
+#news .nonactivee , #education .nonactivee {
+  border: none;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #616569;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.27px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  margin-left: 20px;
+  margin-bottom: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#news .nonactivee:hover, #education .nonactivee:hover{
+  background-color: transparent;
+  color: #4b4b4b;
+  border: 1px solid #615e5e;
+}
 #news h3,
 #education h3 {
   font-size: 24px;
@@ -68,36 +99,6 @@ body {
 #news nav li,
 #education nav li {
   position: relative;
-}
-
-#news nav a,
-#education nav a {
-  background-color: #ffffff;
-  color: #616569;
-  font-size: 18px;
-  font-family: "IstokWeb";
-  line-height: 150%;
-  letter-spacing: -0.27px;
-  border-radius: 10px;
-  margin-top: 10px;
-  text-decoration: none;
-  box-sizing: border-box;
-  border: 1px solid #ffffff;
-  display: block;
-  margin-left: 20px;
-  margin-bottom: 6px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-decoration: none;
-}
-
-
-#news nav a:hover, #education nav a:hover{
-  background-color: transparent;
-  color: #4b4b4b;
-  border: 1px solid #615e5e;
 }
 
 #news .cards {
