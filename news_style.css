@@ -32,32 +32,46 @@
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    text-indent: 18px;
-}
-
-#myDropdown {
-    border: 18px;
+    text-indent: 16px;
 }
 
 select {
-    -webkit-appearance: none;
+    color: gray;
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background: transparent;
     border: 1px solid #ccc;
     padding: 5px;
-    padding-left: 25px;
+    padding-left: 18px;
+}
+
+.SelectID:hover,
+.SelectID:focus {
+    color: rgb(0, 0, 0);
+    background: #e0e0e034;
+}
+
+select option:first-child{
+    color: gray;
+}
+
+select:not(:has(option[value=""]:checked)) {
+    color: #000000;
 }
 
 .Select {
     position: relative;
 }
-  
-.Select::after {
-    content: "▼";
-    top: 36%;
-    font-size: 0.6rem;
-    right: 15px;
+
+.select_arrow {
     position: absolute;
+    top: 16px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 7px 4px 0px 4px;
+    border-color: #000000 transparent transparent transparent;
 }
 
 .calendar-img {
