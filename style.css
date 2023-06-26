@@ -25,13 +25,17 @@ body {
   color: #2D3237;
 font-size: 26px;
 font-family: "IstokWebBold";
-
 line-height: 150%;
 letter-spacing: -0.9px;
 text-transform: uppercase;
 }
 #news li, #education li{
-  font-size: 15px;
+
+  color: #616569;
+font-size: 18px;
+font-family: Istok Web;
+line-height: 150%;
+letter-spacing: -0.27px;
 }
 #news h3,  #education h3 {
     font-size: 24px;
@@ -56,8 +60,9 @@ text-transform: uppercase;
 #news nav a,  #education nav a {
   display: block;
   margin-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
   color: #626262;
