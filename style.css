@@ -19,7 +19,14 @@ body {
   margin-right: 70px;
   width: calc(100% - 140px);
 }
-
+#maincontent .activee{
+  color: #2D3237;
+  font-size: 26px;
+  font-family: "IstokWebBold";
+  line-height: 150%;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+}
 #news {
   background-color: #ffffff;
 }
