@@ -409,6 +409,7 @@ footer a {
   
   nav li {
     position: relative;
+    font-family: "IstokWebBold";
   }
   
   nav a {
@@ -422,6 +423,7 @@ footer a {
   
   /* Стилизуем выпадающее меню */
   nav .dropdown .submenu {
+    font-family:"IstokWeb";
     display: none;
     position: absolute;
     margin-top: 20px;
