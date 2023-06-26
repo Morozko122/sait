@@ -126,10 +126,10 @@ select:not(:has(option[value=""]:checked)) {
   width: 100%;
   justify-content: left;
   align-items: center;
+  grid-template-columns: repeat(4, 20fr);
 }
 
 #news .card {
-  grid-template-columns: repeat(4, 20fr);
   position: relative;
   width: 25%;
   height: calc(width- 10px);
