@@ -1,18 +1,7 @@
 /* Основные стили */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
-@font-face {
-  font-family: "IstokWeb";
-  src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@font-face {
-  font-family: "IstokWebBold";
-  src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
 
 body {
   margin: 0;
@@ -45,10 +34,9 @@ body {
   background-color: #ffffff;
 }
 
-#news h2,
-#education h2 {
+.activ{
   color: #2D3237;
-  font-size: 26px;
+  font-size: 30px;
   font-family: "IstokWebBold";
   line-height: 150%;
   letter-spacing: -0.9px;
@@ -247,8 +235,8 @@ box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
   font-size: 16px;
 }
 #education .programSS {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 
   justify-items: center;
   text-align: center;
@@ -466,13 +454,13 @@ header nav ul {
   padding: 0;
 }
 
-header nav li {
+.dropdown {
   position: relative;
   height: 109px;
 }
 
 header nav a {
-  font-family: "IstokWeb";
+  font-family: 'Istok Web', sans-serif;
   display: block;
   padding-left: 15px;
   text-decoration: none;
@@ -492,25 +480,27 @@ header nav .dropdown .submenu {
   top: 100%;
   left: 0;
   z-index: 2;
-  min-width: 200px;
   background-color: #e9e9e9;
   border: 1px solid #e8e8e8;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 0;
 
 }
-header nav .dropdown .submenu li{
-  height: 40px;
-}
+
 header nav .dropdown .submenu a{
   padding: 0;
   margin: 20px;
-  font-family: "IstokWeb";
+  font-family: 'Istok Web', sans-serif;
   font-weight: 400;
+  color: #000;
+ font-size: 15px;
+line-height: 161.945%;
+letter-spacing: 0.75px;
+word-spacing: nowrap;
 }
 
 header nav .dropdown:hover .submenu {
-  display: block;
+  display: inline-block;
 }
 
 .switchpic {
