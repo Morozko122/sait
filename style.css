@@ -22,7 +22,13 @@ body {
     background-color: #ffffff;
 }
 #news h2 , #education h2 {
-  font-size: 26px;
+  color: #2D3237;
+font-size: 26px;
+font-family: "IstokWebBold";
+
+line-height: 150%;
+letter-spacing: -0.9px;
+text-transform: uppercase;
 }
 #news li, #education li{
   font-size: 15px;
@@ -151,8 +157,8 @@ body {
     width: calc(100% - 60px);
     height: 250px;
     border-radius: 7px;
-    box-shadow: 0 0 4px rgba(33, 33, 33, 0.204); 
-    background-color: #ffffff;
+background: #FFF;
+box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
     padding: 20px;
     position: relative;
     background-repeat: no-repeat;
@@ -518,4 +524,15 @@ footer a {
     transform: scale(1.2);
     background-color: #fff;
   }
- 
+  @font-face {
+    font-family: "IstokWeb"; 
+    src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+    @font-face {
+      font-family: "IstokWebBold"; 
+      src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype"); 
+      font-style: normal; 
+      font-weight: normal; 
+      } 
