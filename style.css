@@ -1,4 +1,18 @@
 /* Основные стили */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
+@font-face {
+  font-family: "IstokWeb";
+  src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "IstokWebBold";
+  src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 
 body {
   margin: 0;
@@ -85,8 +99,7 @@ body {
 }
 
 
-#news nav a:hover,
-#education nav a:hover {
+#news nav a:hover, #education nav a:hover{
   background-color: transparent;
   color: #4b4b4b;
   border: 1px solid #615e5e;
@@ -114,7 +127,6 @@ body {
   content: "";
   display: block;
   padding-top: 110%;
-  /* Установите высоту псевдоэлемента в два раза больше ширины элемента */
 }
 
 #news .card:last-child {
@@ -165,23 +177,23 @@ body {
 
 }
 
-.cards>div:nth-child(even) {
+#education .cards>div:nth-child(even) {
   justify-self: right;
 }
 
 #education .card {
-  width: calc(100% - 60px);
-  height: 250px;
-  border-radius: 7px;
-  background: #FFF;
-  box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
-  padding: 20px;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: right center;
+    width: calc(100% - 60px);
+    height: 250px;
+    border-radius: 7px;
+background: #FFF;
+box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
+    padding: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
-.card img {
+#education .card img {
   position: absolute;
   top: 50%;
   bottom: 50%;
@@ -196,11 +208,16 @@ body {
 }
 
 #education .card .text h4 {
-  font-size: 22px;
+  margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 24px;
+  font-family: 'Heebo', sans-serif;
+  line-height: 150%;
+  letter-spacing: -0.36px;
 }
 
 #education .card .text p {
+  margin-top: 20px;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 10px;
@@ -217,7 +234,6 @@ body {
   color: #000;
   font-size: 20px;
 }
-
 
 #education p {
   margin-top: 20px;
@@ -578,18 +594,4 @@ header nav .dropdown:hover .submenu {
 .switchpic-dot.active {
   transform: scale(1.2);
   background-color: #fff;
-}
-
-@font-face {
-  font-family: "IstokWeb";
-  src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "IstokWebBold";
-  src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
 }
