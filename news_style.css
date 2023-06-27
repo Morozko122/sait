@@ -74,13 +74,16 @@ select {
     font-family:'IstokWeb';
 }
 
-.SelectID:hover {
+.SelectID:hover{
     color: rgb(0, 0, 0);
     background: #e0e0e034;
 }
 
 select option:first-child{
     color: gray;
+}
+select option:not(:first-child){
+    color: #000000;
 }
 
 select:not(:has(option[value=""]:checked)) {
@@ -106,36 +109,33 @@ select:not(:has(option[value=""]:checked)) {
 }
 
 .Date {
+    padding-top: 5px;
     margin-right: 0px;
-    padding: 4px;
     justify-content: flex-start;
+    position: relative;
+}
+.Date2 {
+    margin-right: 0px;
+    justify-content: flex-start;
+    position: relative;
 }
 
-input[type="date"]{
+input[type="date"] {
+    position: absolute;
+    height: 25px;
     border: none;
-    width: 100%;
-    font-size: 1.5rem
+    width: 25px;
+    font-size: 1.1rem;
+    z-index: 2;
+    opacity: 0;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
-    color: transparent;
-    background: none;
+.image-date {
+    height: 25px;
+    position: absolute;
     z-index: 0;
-    content: url(calendar.png);
 }
-input[type="date"]{
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    Outline: none;
-}
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    margin:0;
-}
-input[type="date"]::-webkit-datetime-edit {
-    display:none;
-}
-input[type="date"]:hover{
-    border-radius: 5px;
-    background: #e0e0e034;
+.Date:hover .calendar-img{
+    opacity: 70%;
 }
 
 #news {
@@ -144,10 +144,6 @@ input[type="date"]:hover{
     overflow: auto;
     width: 100%;
     min-height: 828px
-}
-
-#news::-webkit-scrollbar {
-    display: none;
 }
 
 #news .cards2 {
