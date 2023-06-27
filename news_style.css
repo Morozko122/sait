@@ -16,6 +16,8 @@ body{
 }
 
 #Base{
+    margin-top: 45px;
+    margin-bottom: 0px;
     display: inline-block;
     margin-left: 70px;
     margin-right: 70px;
@@ -52,6 +54,9 @@ body{
     border: 1px solid rgba(205, 205, 205, 0.17);
     background: #FFF;
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.10) inset;
+
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    Outline: none;
 }
 .Search{
     width: 277px;
@@ -72,8 +77,7 @@ select {
     font-family:'IstokWeb';
 }
 
-.SelectID:hover,
-.SelectID:focus {
+.SelectID:hover {
     color: rgb(0, 0, 0);
     background: #e0e0e034;
 }
