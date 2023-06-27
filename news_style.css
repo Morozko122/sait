@@ -135,7 +135,7 @@ input[type="date"]{
     margin-top: 45px;
     overflow: auto;
     width: 100%;
-    min-height: 900px
+    min-height: 828px
 }
 
 #news::-webkit-scrollbar {
