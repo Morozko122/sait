@@ -5,6 +5,7 @@ body, html{
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
 @font-face {
   font-family: "IstokWeb";
@@ -539,7 +540,7 @@ header {
   align-items: center;
   height: 109px;
   background-color: #ffffff;
-  box-shadow: 0px 2px 22px 13px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.29);
   padding: 0 20px;
 }
 
@@ -642,6 +643,7 @@ header nav .dropdown:hover .submenu {
 }
 
 .switchpic-slide-content {
+  width: 55%;
   position: absolute;
   top: 50%;
   left: 20px;
@@ -653,8 +655,14 @@ header nav .dropdown:hover .submenu {
 }
 
 .switchpic-slide-content h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  color: #FFF;
+font-size: 60px;
+font-family: 'Raleway', sans-serif;
+font-weight: 900;
+font-variant: small-caps;
+line-height: 108.5%;
+letter-spacing: 4.2px;
+margin: 0;
 }
 
 .switchpic-slide-content p {
@@ -665,16 +673,23 @@ header nav .dropdown:hover .submenu {
 .switchpic-slide-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #fff;
-  color: #000;
-  text-decoration: none;
+  background-color: rgba(28,28,28,0);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
+font-size: 24px;
+font-family: 'Istokweb';
+font-weight: 700;
+letter-spacing:normal;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .switchpic-slide-btn:hover {
-  background-color: #000;
+  background-color: rgba(28, 28, 28, 0.5);
   color: #fff;
 }
 
