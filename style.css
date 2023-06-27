@@ -28,7 +28,8 @@ body {
   background-color: #ffffff;
 }
 
-#news .activee , #education .activee {
+#news .activee,
+#education .activee {
   background-color: #ffffff;
   width: auto;
   height: auto;
@@ -46,7 +47,9 @@ body {
   text-transform: uppercase;
   padding: 0;
 }
-#news .nonactivee , #education .nonactivee {
+
+#news .nonactivee,
+#education .nonactivee {
   border: none;
   font-family: 'Rubik', sans-serif;
   text-align: center;
@@ -69,11 +72,14 @@ body {
   padding-left: 5px;
   padding-right: 5px;
 }
-#news .nonactivee:hover, #education .nonactivee:hover{
+
+#news .nonactivee:hover,
+#education .nonactivee:hover {
   background-color: transparent;
   color: #4b4b4b;
   border: 1px solid #615e5e;
 }
+
 #news h3,
 #education h3 {
   font-size: 24px;
@@ -178,15 +184,15 @@ body {
 }
 
 #education .card {
-    width: calc(100% - 60px);
-    height: 250px;
-    border-radius: 7px;
-background: #FFF;
-box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
-    padding: 20px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: right center;
+  width: calc(100% - 60px);
+  height: 250px;
+  border-radius: 7px;
+  background: #FFF;
+  box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
+  padding: 20px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 #education .card img {
@@ -235,6 +241,7 @@ box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
   margin-top: 20px;
   font-size: 16px;
 }
+
 #education .programSS {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -242,17 +249,25 @@ box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
   justify-items: center;
   text-align: center;
 }
-#education .programSS img{
+
+#education .programSS img {
   height: 110px;
-  width:  110px;
+  width: 110px;
 }
+
 #digital {
   background-color: #ffffff;
 
 }
 
 #digital h3 {
-  font-size: 24px;
+  color: #2D3237;
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
@@ -346,9 +361,10 @@ box-shadow: 0px 0px 2px 1px rgba(104, 104, 104, 0.25);
   margin-top: 80px;
   margin-bottom: 80px;
 }
-#digital .neworder img{
+
+#digital .neworder img {
   height: 120px;
-  width:  120px;
+  width: 120px;
 }
 
 footer {
@@ -488,16 +504,16 @@ header nav .dropdown .submenu {
 
 }
 
-header nav .dropdown .submenu a{
+header nav .dropdown .submenu a {
   padding: 0;
   margin: 20px;
   font-family: 'Istok Web', sans-serif;
   font-weight: 400;
   color: #000;
- font-size: 15px;
-line-height: 161.945%;
-letter-spacing: 0.75px;
-word-spacing: nowrap;
+  font-size: 15px;
+  line-height: 161.945%;
+  letter-spacing: 0.75px;
+  word-spacing: nowrap;
 }
 
 header nav .dropdown:hover .submenu {
