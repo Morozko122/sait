@@ -1,14 +1,27 @@
 /* Основные стили */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 
+@font-face {
+  font-family: "IstokWeb";
+  src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "IstokWebBold";
+  src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
+  font-style: initial;
+  font-weight: normal;
+}
 
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'IstokWeb';
 }
 
 #content {
@@ -40,32 +53,32 @@ body {
   cursor: pointer;
   color: #2D3237;
   font-size: 30px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'IstokWebBold';
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.9px;
   text-transform: uppercase;
   padding: 0;
+  margin-right: 10px;
 }
 
 #news .nonactivee,
 #education .nonactivee {
   border: none;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'IstokWeb';
   text-align: center;
   display: inline-block;
-  margin: 4px 2px;
   cursor: pointer;
   background-color: #ffffff;
   color: #616569;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 150%;
   letter-spacing: -0.27px;
   border-radius: 10px;
   margin-top: 10px;
   box-sizing: border-box;
   border: 1px solid #ffffff;
-  margin-left: 20px;
+  margin-right: 10px;
   margin-bottom: 6px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -263,7 +276,7 @@ body {
 #digital h3 {
   color: #2D3237;
   font-size: 30px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'IstokWeb';
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.9px;
@@ -273,67 +286,125 @@ body {
 
 #digital nav {
   margin-bottom: 20px;
+  flex-grow: 1;
+  text-align: left;
 }
 
 #digital nav ul {
-  list-style: none;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #digital nav li {
   margin-right: 20px;
 }
 
-#digital nav li a {
-  font-size: 16px;
-  color: #000000;
+#digital .activee {
+  border-radius: 10px;
+  background: #087054;
+  width: auto;
+  height: auto;
+  border: none;
+  text-align: center;
   text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'IstokWeb';
+  line-height: 150%;
+  letter-spacing: -0.36px;
+  padding: 5px 15px 5px 15px;
+  margin-right: 10px;
 }
 
-#digital nav li a:hover {
-  background-color: #f3f3f3;
+#digital .nonactivee {
+  border: none;
+  font-family: 'IstokWeb';
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #616569;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.27px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#digital .nonactivee:hover {
+  background-color: transparent;
+  color: #4b4b4b;
+  border: 1px solid #615e5e;
 }
 
 #digital .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
 }
 
 #digital .card {
-  width: 20%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-size: 100% 100%;
+  border-radius: 7px;
+  width: auto;
   background-color: #f3f3f3;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+#digital .card::before {
+  content: "";
+  display: flex;
+  padding-top: 60%;
+}
+
+
+#digital .card .text {
+  position: absolute;
+  width: 80%;
+  margin-bottom: 10px;
   padding: 20px;
 }
 
-#digital .card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-#digital .card .text {
-  margin-bottom: 10px;
-}
-
 #digital .card .text h4 {
-  font-size: 20px;
-  margin-bottom: 5px;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'IstokWebBold';
+  font-weight: 900;
+  line-height: 117.4%;
+  letter-spacing: 1.1px;
 }
 
 #digital .card .text p {
-  font-size: 16px;
-  margin-bottom: 10px;
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 170.5%;
+  letter-spacing: 0.6px;
+  margin-top: 20px;
 }
 
-#digital p {
-  margin-top: 20px;
-  font-size: 16px;
-}
 
 
 .digital-a {
@@ -451,7 +522,7 @@ header {
 }
 
 header nav {
-  margin-left: 160px;
+  margin-left: auto;
   margin-right: auto;
 }
 
