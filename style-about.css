@@ -27,12 +27,22 @@ body {
 }
 
 #content {
+  margin-top: 60px;
   width: 100%;
   display: flex;
   min-height: 900px;
   height: 100%;
 }
+#content p{
+  font-size: 30px;
+  font-family: 'IstokWebBold';
+  font-weight: 400;
+
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+}
 #contacts{
+  margin-left: 60px;
   width: 20%;
   background-color: white;
 }
