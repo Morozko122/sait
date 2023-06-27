@@ -2,11 +2,11 @@
 <html>
 
 <head>
-        
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой сайт</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-about.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">НОВОСТИ</a></li>
+                <li class="dropdown"><a href="news.html">НОВОСТИ</a></li>
                 <li class="dropdown">
                     <a href="#">ОБРАЗОВАТЕЛЬНЫЙ ПОРТФЕЛЬ</a>
                     <ul class="submenu">
@@ -40,186 +40,24 @@
                         <li><a href="#">МООК</a></li>
                     </ul>
                 </li>
-                <li><a href="#">ПАРТНЕРСТВО</a></li>
+                <li class="dropdown"><a href="#">ПАРТНЕРСТВО</a></li>
 
-                <li><a href="#">ОБ ИНСТИТИУТЕ</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
+                <li class="dropdown"><a href="#">ОБ ИНСТИТИУТЕ</a></li>
+                <li class="dropdown"><a href="#">КОНТАКТЫ</a></li>
 
             </ul>
         </nav>
     </header>
     <!-- CONTENT -->
     <div id="content">
-        <!-- switchpic -->
-        <div class="switchpic">
-            <div class="switchpic-slides">
-              <div class="switchpic-slide active" style="background-image: url('img1.png')">
-                <div class="switchpic-slide-content">
-                  <h2>Заголовок элемента 1</h2>
-                  <p>Описание элемента 1</p>
-                  <a href="path/to/other-page.html" class="switchpic-slide-btn">Перейти на другую страницу</a>
-                </div>
-              </div>
-              <div class="switchpic-slide" style="background-image: url('img2.png')">
-                <div class="switchpic-slide-content">
-                  <h2>Заголовок элемента 2</h2>
-                  <p>Описание элемента 2</p>
-                  <a href="path/to/other-page.html" class="switchpic-slide-btn">Перейти на другую страницу</a>
-                </div>
-              </div>
-              <div class="switchpic-slide" style="background-image: url('./res/images/neft2.jpg')">
-                <div class="switchpic-slide-content">
-                  <h2>Заголовок элемента 3</h2>
-                  <p>Описание элемента 3</p>
-                  <a href="path/to/other-page.html" class="switchpic-slide-btn">Перейти на другую страницу</a>
-                </div>
-              </div>
-            </div>
-            <div class="switchpic-dots">
-              <span class="switchpic-dot active"></span>
-              <span class="switchpic-dot"></span>
-              <span class="switchpic-dot"></span>
-            </div>
-          </div>
-
-        <!-- maincontent -->
-        <div id="maincontent">
-            <div id="news">
-                <nav>
-                    <ul>
-                        <h2>НОВОСТИ</h2>
-                        <li><a href="#">Объявления</a></li>
-                        <li><a href="#">Дискуссионная площадка</a></li>
-                        <li><a href="#">Статьи</a></li>
-                    </ul>
-                </nav>
-                <div class="cards">
-                    <div class="card">
-                        <a href="#">
-                            <div class="image" style="background-image: url('i3.jpg')"></div>
-                            <h3>Объединение инженерских вузов становиться самым большим в России</h3>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="#">
-                            <div class="image" style="background-image: url('i3.jpg')"></div>
-                            <h3>Заголовок 2</h3>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="#">
-                            <div class="image" style="background-image: url('i3.jpg')"></div>
-                            <h3>Заголовок 3</h3>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="#">
-                            <div class="image" style="background-image: url('i3.jpg')"></div>
-                            <h3>Заголовок 4</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div id="contacts">
+            <h1>Контакты</h2>
+        </div>
+        <div id="maps">
+            <h1>Мы на карте</h2>
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=65.579355%2C57.144083&mode=search&oid=1122771264&ol=biz&z=17.85" width="800" height="600" frameborder="0" allowfullscreen="true"></iframe></div>
         
-
-        <div id="education">
-            <nav>
-                <ul>
-                    <h3>ОБРАЗОВАТЕЛЬНЫЙ ПОРТФЕЛЬ</h3>
-                    <li><a href="#">Актуально</a></li>
-                    <li><a href="#">Ближайщий набор</a></li>
-                    <li><a href="#">Программы обучения</a></li>
-                </ul>
-            </nav>
-            <div class="cards">
-                <div class="card" style="background-image: url('obr1.png')" >
-                    <div class="text">
-                        <h4>Нефтегазовое дело</h4>
-                        <p>Описание создано для описания программы описания программы</p>
-                    </div>
-                    <div class = "bottomtext"><a href="#">Подобнее  &#10230;</a></div>
-                </div>
-                <div class="card" style="background-image: url('obr2.png')">
-                    <div class="text">
-                        <h4>Нефтегазовое дело</h4>
-                        <p>Описание создано для описания программы описания программы</p>    
-                    </div>
-                    <div class = "bottomtext"><a href="#">Подобнее  &#10230;</a></div>
-                </div>
-                <div class="card" style="background-image: url('obr3.png')">
-                    <div class="text">
-                        <h4>Нефтегазовое дело</h4>
-                        <p>Описание создано для описания программы описания программы</p>    
-                    </div>
-                    <div class = "bottomtext"><a href="#">Подобнее  &#10230;</a></div>
-                </div>
-                <div class="card" style="background-image: url('obr4.png')">
-                    <div class="text">
-                        <h4>Нефтегазовое дело</h4>
-                        <p>Описание создано для описания программы описания программы</p>    
-                    </div>
-                    <div class = "bottomtext"><a href="#">Подобнее  &#10230;</a></div>
-                </div>
-            </div>
-            <div class="programSS">
-                <img src="./res/images/icons8-чат-100.png" alt="ЧатИк" />
-                <p>Не можете опредиться?</p>
-                <p><b>Подберем</b> вам программу обучения</p>
-                <a href="#" class="digital-a">Кнопка</a>
-            </div>
-        </div>
-
-        <div id="digital">
-            <h3>Цифровой портфель</h3>
-            <nav>
-                <ul>
-                    <li><a href="#">Элемент меню 1</a></li>
-                    <li><a href="#">Элемент меню 2</a></li>
-                    <li><a href="#">Элемент меню 3</a></li>
-                </ul>
-            </nav>
-            <div class="cards">
-                <div class="card">
-                    <img src="digital1.jpg" alt="digital1" />
-                    <div class="text">
-                        <h4>Текст 1</h4>
-                        <p>Описание 1</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="digital2.jpg" alt="digital2" />
-                    <div class="text">
-                        <h4>Текст 2</h4>
-                        <p>Описание 2</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="digital3.jpg" alt="digital3" />
-                    <div class="text">
-                        <h4>Текст 3</h4>
-                        <p>Описание 3</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="digital4.jpg" alt="digital4" />
-                    <div class="text">
-                        <h4>Текст 4</h4>
-                        <p>Описание 4</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="neworder">
-                <img src="./res/images/icons8-монитор-80.png" alt="Монитор" />
-                <p><b>Разработаем</b> цифровой продукт или учебный план<br> по вашему индивидуальному заказу</p>
-                <a href="#" class="digital-a">Кнопка</a>
-            </div>
-        </div>
-    </div>
-    </div>
+    </div>        
     </div>
     <script src="script.js"></script>
     <!-- FOOTER -->
