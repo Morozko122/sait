@@ -240,11 +240,16 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   color: rgba(0, 0, 0, 0.70);
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Heebo', sans-serif;
   line-height: 176%;
   letter-spacing: -1.21px;
-
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 120px;
 }
 
 
@@ -423,6 +428,12 @@ body {
   letter-spacing: 0.6px;
   margin-top: 0;
   margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  max-height: 200px;
 }
 
 #digital .bottomtext {

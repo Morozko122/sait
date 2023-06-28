@@ -45,4 +45,4 @@ const slides = document.querySelectorAll('.switchpic-slide');
           }
       }
   }
-  
+
