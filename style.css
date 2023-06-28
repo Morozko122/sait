@@ -247,7 +247,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 3; 
   -webkit-box-orient: vertical;
   max-height: 120px;
 }
@@ -584,7 +584,7 @@ header nav ul {
 }
 
 header nav a {
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'IstokWeb';
   display: block;
   padding-left: 15px;
   text-decoration: none;
@@ -614,7 +614,7 @@ header nav .dropdown .submenu {
 header nav .dropdown .submenu a {
   padding: 0;
   margin: 20px;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'IstokWeb';
   font-weight: 400;
   color: #000;
   font-size: 15px;
