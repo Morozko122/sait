@@ -46,16 +46,22 @@ body {
   text-align: left;
 }
 #menu_left ul {
-  display: inline-flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  text-align: left;
+  padding-left: 0;
 }
-#menu_left li {
-text-align: left;
+
+#menu_left ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+#menu_left ul li a {
+  color: #888;
+font-size: 15px;
+font-family: Istok Web;
+font-weight: 700;
+line-height: 138.9%;
+letter-spacing: 0.75px;
+text-transform: uppercase;
 }
 #mainbody{
   display: flex;
