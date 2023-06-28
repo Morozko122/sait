@@ -16,22 +16,28 @@
   font-style: initial;
   font-weight: normal;
 }
-body, html{
+
+body,
+html {
   height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   font-family: 'IstokWeb';
 }
+
 #content {
+  height: auto;
   margin-top: 60px;
   width: 100%;
   display: flex;
   min-height: 900px;
 }
-#content h1{
+
+#content h1 {
   font-size: 30px;
   font-family: 'IstokWebBold';
   font-weight: 400;
@@ -40,61 +46,158 @@ body {
   margin: 0;
 }
 
-#contacts{
+#contacts {
   margin-left: 60px;
   margin-right: 60px;
   width: 20%;
   background-color: white;
 }
-#contacts h2{
+
+#contacts h2 {
   font-size: 17px;
   font-family: 'IstokWebBold';
   font-weight: 400;
   line-height: 150%;
   letter-spacing: -0.075px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
-#contacts p{
+
+#contacts p {
   color: #000;
   font-size: 14px;
   font-family: "IstokWeb";
   line-height: 200%;
   letter-spacing: 0.48px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
-#contacts .contacts-block{
+
+#contacts .contacts-block {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-#contacts span{
+
+#contacts span {
   color: #006C4F;
 }
 
-#maps{
+#maps-question {
   display: flex;
   flex-direction: column;
   width: 80%;
-  background-color: white;
-  position:relative;
-  overflow:hidden;
   margin-right: 60px;
 }
+
+#maps {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
 #maps a {
-  color:#eee;
-  font-size:12px;
-  position:absolute;
-  top:0px;
+  color: #eee;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
 }
-#maps iframe{
+
+#maps iframe {
   padding-top: 15px;
-  position:relative;
+  position: relative;
 }
 
+#question {
+  margin-top: 25px;
+}
 
+#question #smallInp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
 
+#question #bigInp {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 
+#question #smallInp input {
+  flex: 1;
+  margin-right: 20px;
+  height: 50px;
+  border: 1px solid rgba(205, 205, 205, 0.30);
+  border-radius: 20px;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.30);
+  font-size: 15px;
+  font-family: "IstokWeb";
+  line-height: 87%;
+}
 
+#question #bigInp #textAreaForQuestion {
+  flex: 1;
+  resize: none;
+  width: auto;
+  height: auto;
+  min-height: 300px;
+  border: 1px solid rgba(205, 205, 205, 0.30);
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.30);
+  font-size: 15px;
+  font-family: "IstokWeb";
+  line-height: 150%;
+}
 
+#personalAccept {
+  display: flex;
+  color: rgba(0, 0, 0, 0.70);
+  font-size: 15px;
+  font-family: "IstokWeb";
+  line-height: 150%;
+  margin: 0px;
+}
+
+#personalAccept a {
+  color: rgba(0, 0, 0, 0.70);
+}
+
+#personalAccept p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+}
+
+#personalAccept #Checkbox {
+  width: 18px;
+  height: 18px;
+}
+.styled-button {
+  width: 206px;
+  height: 45px;
+  margin-top: 15px;
+  background-color: #006C4F;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 15px;
+  font-family: "IstokWeb";
+  font-weight: 700;
+  line-height: 0%;
+  letter-spacing: -0.3px;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.styled-button:hover {
+  background-color: #000;
+  color: #fff;
+}
 
 #maincontent {
   margin-top: 40px;

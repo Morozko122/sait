@@ -54,26 +54,52 @@
             <h1>Контакты</h1>
             <div class="contacts-block">
                 <h2>Почтовый адрес</h2>
-                <p>625039, г. Тюмень, ул. Мельникайте, 72<br>кабинет 464<br>8 (3452) 68-14-79<br><span>iddo@tyuiu.ru</span></p>
+                <p>625039, г. Тюмень, ул. Мельникайте, 72<br>кабинет 464<br>8 (3452)
+                    68-14-79<br><span>iddo@tyuiu.ru</span></p>
             </div>
             <div class="contacts-block">
                 <h2>Отдел организации учебного процесса программ ДПО</h2>
-                <p>г. Тюмень, ул. Мельникайте, 72<br>кабинеты 460, 461, 462, 465<br>8 (3452) 28-31-86, 8 (3452) 28-34-06<br><span>opu@tyuiu.ru</span></p>
+                <p>г. Тюмень, ул. Мельникайте, 72<br>кабинеты 460, 461, 462, 465<br>8 (3452) 28-31-86, 8 (3452)
+                    28-34-06<br><span>opu@tyuiu.ru</span></p>
             </div>
             <div class="contacts-block">
                 <h2>Отдел проектирования образовательных программ </h2>
-                <p>г. Тюмень, ул. Мельникайте, 72<br>кабинеты 467, 469<br>8 (3452) 28-39-72, 8 (3452) 39-03-44<br><span>opop@tyuiu.ru</span></p>
+                <p>г. Тюмень, ул. Мельникайте, 72<br>кабинеты 467, 469<br>8 (3452) 28-39-72, 8 (3452)
+                    39-03-44<br><span>opop@tyuiu.ru</span></p>
             </div>
             <div class="contacts-block">
                 <h2>Отдел электронного обучения и дистанционных образовательных технологий</h2>
-                <p>г. Тюмень, ул. Мельникайте, 72<br>кабинеты 468, 468а, 470<br>8 (3452) 28-39-71, 8 (3452) 28-35-97, 8 (3452) 39-96-59<br><span>dist@tyuiu.ru</span></p>
+                <p>г. Тюмень, ул. Мельникайте, 72<br>кабинеты 468, 468а, 470<br>8 (3452) 28-39-71, 8 (3452) 28-35-97, 8
+                    (3452) 39-96-59<br><span>dist@tyuiu.ru</span></p>
             </div>
         </div>
-        <div id="maps">
-            <h1>Мы на карте</h1>
-        <iframe src="https://yandex.ru/map-widget/v1/?ll=65.579355%2C57.144083&mode=search&oid=1122771264&ol=biz&z=17.85" width="auto" height="600" frameborder="0" allowfullscreen="true"></iframe></div>
-        
-    </div>        
+        <div id = "maps-question">
+            <div id="maps">
+                <h1>Мы на карте</h1>
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=65.579355%2C57.144083&mode=search&oid=1122771264&ol=biz&z=17.85"
+                    width="auto" height="600" frameborder="0" allowfullscreen="true"></iframe>
+            </div>
+            <div id ="question">
+                <h1>У вас возник вопрос?</h1>
+                <div id = "smallInp">
+                    <input type="text" class="textInputSmall" name="nameInput" placeholder="Введите имя..">
+                    <input type="text" class="textInputSmall" name="mnumberInput" placeholder="Введите номер телефона..">
+                    <input type="text" class="textInputSmall" name="emailInput" placeholder="Введите e-mail.." style="margin-right: 0;">
+                </div>
+                <div id ="bigInp">
+                    <textarea id="textAreaForQuestion" name="questionArea" placeholder="Напишите свой вопрос.."></textarea>
+            </div>
+            <div id ="personalAccept">
+                <input type="checkbox" id="Checkbox" name="Checkbox">
+               <p>Я согласен на обработку персональных данных. <br><a href="">Закон о персональных данных.</a></p>
+               
+            </div>
+            <button class="styled-button">Отправить</button>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
     <script src="script.js"></script>
     <!-- FOOTER -->
