@@ -1,0 +1,75 @@
+/* Основные стили */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+@font-face {
+  font-family: "IstokWeb";
+  src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "IstokWebBold";
+  src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
+  font-style: initial;
+  font-weight: normal;
+}
+body, html{
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'IstokWeb';
+}
+#content {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  min-height: 900px;
+}
+
+#menu_left{
+  margin-left: 60px;
+  width: 15%;
+  background-color: white;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+#menu_left > * {
+  border: none;
+}
+#menu_left a {
+  text-decoration: none;
+  text-align: left;
+}
+#menu_left ul {
+  display: inline-flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#menu_left li {
+text-align: left;
+}
+#mainbody{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  background-color: white;
+  position:relative;
+  overflow:hidden;
+  margin-right: 60px;
+}
+
+
+
+
+
+
+
