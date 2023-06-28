@@ -76,7 +76,7 @@ select {
     background: transparent;
     border: 1px solid #ccc;
     padding-left: 18px;
-    font-family:'IstokWeb';
+    font-family: "IstokWeb";
 }
 
 .SelectID:hover{

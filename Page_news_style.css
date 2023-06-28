@@ -17,21 +17,11 @@ html {
     font-weight: normal;
   }
 
-  
-p{
-    font-family: 'IstokWeb';
-}
-a{
-    font-family: 'IstokWeb';
-    text-decoration: none;
-}
 
 #Base{
-    margin-top: 45px;
+    margin: 70px;
+    margin-top: 40px;
     margin-bottom: 40px;
-    display: flex;
-    margin-left: 70px;
-    margin-right: 70px;
     width: calc(100% - 140px);
     min-height: 980px;
 }
@@ -39,16 +29,82 @@ a{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
+#Back a{
+    color: rgba(32, 34, 56, 0.35);
+    font-size: 15px;
+    font-family: "IstokWeb";
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 #Content{
+    margin-left: 70px;
+    margin-right: 70px;
     height: 100%;
     width: 100%;
-    margin-left: 45px;
 }
-#TAG{
+#Date_Tage{
     display: flex;
+    font-family: "IstokWeb";
+    line-height: 0%;
+    font-size: 10px;
 }
-#Content #TAG p{
-    margin: 0px;
+#date{
+    color: rgba(0, 0, 0, 0.51); 
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.Tag{
+    color: rgba(0, 0, 0, 0.65);
+    letter-spacing: 0.36px;
+    text-transform: lowercase;
+}
+
+#Title{
+    color: #000;
+    font-size: 35px;
+    font-family: "IstokWeb";
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+#advertisement{
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 12px;
+    font-family: "IstokWeb";
+    letter-spacing: 0.36px;
+    text-transform: lowercase;
+}
+#image{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#image img{
+    width: 100%;
+    height: max-content;
+}
+#image p{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 10px;
+    font-family: "IstokWeb";
+    line-height: 0%;
+    text-transform: lowercase;
+}
+#Text{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 20px;
+    font-family: "IstokWeb";
+    font-variant: small-caps;
+    line-height: 212.5%;
+    letter-spacing: -0.5px;
 }
