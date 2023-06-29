@@ -31,8 +31,8 @@ html {
 }
 
 #Content{
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 40px;
+    margin-right: 80px;
     height: 100%;
     width: 100%;
 }
@@ -97,4 +97,5 @@ html {
     font-variant: small-caps;
     line-height: 212.5%;
     letter-spacing: -0.5px;
+    margin-bottom: 80px;
 }
