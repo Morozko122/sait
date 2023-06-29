@@ -1,5 +1,5 @@
 /* Основные стили */
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
@@ -50,7 +50,7 @@ body {
 #menu_left ul li a {
   color: #888;
 font-size: 15px;
-font-family: 'Istok Web', sans-serif;
+font-family: 'Heebo', sans-serif;
 font-weight: 700;
 line-height: 138.9%;
 letter-spacing: 0.75px;
@@ -68,6 +68,8 @@ text-transform: uppercase;
   overflow:hidden;
   margin-right: 60px;
   margin-left: 45px;
+  padding-left: 2px;
+  padding-bottom: 30px;
 }
 
 
