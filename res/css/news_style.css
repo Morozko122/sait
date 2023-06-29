@@ -1,20 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 body,
 html {
   height: 100%;
 }
 
-@font-face {
-    font-family: "IstokWeb"; 
-    src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype"); 
-    font-style:normal;
-    font-weight:bolder;
-}
-@font-face {
-    font-family: "IstokWebBold"; 
-    src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
-    font-style:initial; 
-    font-weight: normal; 
-}
 
 #Base{
     margin-top: 45px;
@@ -43,7 +36,7 @@ html {
     /* padding-top: 2px; */
     vertical-align: middle;
     font-size: 35px;
-    font-family:'IstokWebBold';
+    font-family: 'Istok Web', sans-serif;
     color: #000;
     text-transform: uppercase;
     justify-content: center;
@@ -76,7 +69,7 @@ select {
     background: transparent;
     border: 1px solid #ccc;
     padding-left: 18px;
-    font-family: "IstokWeb";
+    font-family: 'Istok Web', sans-serif;
 }
 
 .SelectID:hover{

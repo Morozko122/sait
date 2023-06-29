@@ -8,26 +8,13 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-
-@font-face {
-  font-family: "IstokWeb";
-  src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "IstokWebBold";
-  src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
-  font-style: initial;
-  font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
 }
 
 #content {
@@ -60,7 +47,7 @@ body {
   cursor: pointer;
   color: #2D3237;
   font-size: 30px;
-  font-family: 'IstokWebBold';
+  font-family: 'Istok Web', sans-serif;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.9px;
@@ -72,7 +59,7 @@ body {
 #news .nonactivee,
 #education .nonactivee {
   border: none;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
   text-align: center;
   display: inline-block;
   cursor: pointer;
@@ -247,7 +234,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-height: 120px;
 }
@@ -279,7 +266,7 @@ body {
   color: #202238;
   text-align: center;
   font-size: 18px;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
   line-height: 160%;
   letter-spacing: -0.81px;
 }
@@ -297,7 +284,7 @@ body {
 #digital h3 {
   color: #2D3237;
   font-size: 30px;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.9px;
@@ -337,7 +324,7 @@ body {
   color: #FFF;
   text-align: center;
   font-size: 24px;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
   line-height: 150%;
   letter-spacing: -0.36px;
   padding: 5px 15px 5px 15px;
@@ -346,7 +333,7 @@ body {
 
 #digital .nonactivee {
   border: none;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
   text-align: center;
   display: inline-block;
   cursor: pointer;
@@ -413,7 +400,7 @@ body {
   color: #000;
   text-align: center;
   font-size: 22px;
-  font-family: 'IstokWebBold';
+  font-family: 'Istok Web', sans-serif;
   font-weight: 900;
   line-height: 117.4%;
   letter-spacing: 1.1px;
@@ -452,7 +439,7 @@ body {
   transition: all 0.3s ease;
   margin-bottom: 30px;
   font-size: 15px;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
   font-weight: 500;
   letter-spacing: -0.3px;
 }
@@ -467,6 +454,15 @@ body {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 80px;
+}
+
+#digital .neworder p {
+  color: #202238;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Istok Web', sans-serif;
+  line-height: 160%;
+  letter-spacing: -0.81px;
 }
 
 #digital .neworder img {
@@ -584,7 +580,7 @@ header nav ul {
 }
 
 header nav a {
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
   display: block;
   padding-left: 15px;
   text-decoration: none;
@@ -614,7 +610,7 @@ header nav .dropdown .submenu {
 header nav .dropdown .submenu a {
   padding: 0;
   margin: 20px;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
   font-weight: 400;
   color: #000;
   font-size: 15px;
@@ -685,8 +681,8 @@ header nav .dropdown:hover .submenu {
   letter-spacing: -0.475px;
 }
 
-.switchpic-slide-btn p  {
-  
+.switchpic-slide-btn p {
+
   display: inline-block;
   padding: 10px 20px;
   padding-left: 24.68px;
@@ -698,7 +694,7 @@ header nav .dropdown:hover .submenu {
   font-weight: bold;
   text-align: center;
   font-size: 24px;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
   font-weight: 700;
   letter-spacing: 4.68px;
   border-radius: 4px;

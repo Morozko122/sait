@@ -1,22 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 body,
 html {
   height: 100%;
 }
-
-@font-face {
-    font-family: "IstokWeb";
-    src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-  }
-  
-  @font-face {
-    font-family: "IstokWebBold";
-    src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
-    font-style: initial;
-    font-weight: normal;
-  }
-
 
 #Base{
     margin: 70px;
@@ -34,7 +24,7 @@ html {
 #Back a{
     color: rgba(32, 34, 56, 0.35);
     font-size: 15px;
-    font-family: "IstokWeb";
+    font-family: 'Istok Web', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
@@ -48,7 +38,7 @@ html {
 }
 #Date_Tage{
     display: flex;
-    font-family: "IstokWeb";
+    font-family: 'Istok Web', sans-serif;
     line-height: 0%;
     font-size: 10px;
 }
@@ -66,7 +56,7 @@ html {
 #Title{
     color: #000;
     font-size: 35px;
-    font-family: "IstokWeb";
+    font-family: 'Istok Web', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 0px;
@@ -74,7 +64,7 @@ html {
 #advertisement{
     color: rgba(0, 0, 0, 0.65);
     font-size: 12px;
-    font-family: "IstokWeb";
+    font-family: 'Istok Web', sans-serif;
     letter-spacing: 0.36px;
     text-transform: lowercase;
 }
@@ -91,7 +81,7 @@ html {
     text-align: center;
     color: rgba(0, 0, 0, 0.65);
     font-size: 10px;
-    font-family: "IstokWeb";
+    font-family: 'Istok Web', sans-serif;
     line-height: 0%;
     text-transform: lowercase;
 }
@@ -103,7 +93,7 @@ html {
     flex-shrink: 0;
     color: #000;
     font-size: 20px;
-    font-family: "IstokWeb";
+    font-family: 'Istok Web', sans-serif;
     font-variant: small-caps;
     line-height: 212.5%;
     letter-spacing: -0.5px;

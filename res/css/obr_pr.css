@@ -2,20 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@font-face {
-  font-family: "IstokWeb";
-  src: url("./res/fonts/IstokWeb-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
 
-@font-face {
-  font-family: "IstokWebBold";
-  src: url("./res/fonts/IstokWeb-Bold.ttf") format("truetype");
-  font-style: initial;
-  font-weight: normal;
-}
+
 body, html{
   height: 100%;
 }
@@ -23,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'IstokWeb';
+  font-family: 'Istok Web', sans-serif;
 }
 #content {
   margin-top: 60px;
@@ -59,7 +50,7 @@ body {
 #menu_left ul li a {
   color: #888;
 font-size: 15px;
-font-family: 'IstokWeb';
+font-family: 'Istok Web', sans-serif;
 font-weight: 700;
 line-height: 138.9%;
 letter-spacing: 0.75px;
