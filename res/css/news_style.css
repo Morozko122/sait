@@ -16,20 +16,24 @@ html {
 }
 
 #Filter{
-    width: 100%;
+    width: calc(100% - 25px);
     display: flex;
 }
 
 .Block{
     vertical-align: middle;
     margin-right: 20px;
-    display:inline-flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    flex-shrink: 1;
+    width: 30%;
 }
-
+.Block input{
+    width: 100%;
+}
 .News{
-    /* padding-top: 2px; */
+    padding-right: 17px;
     vertical-align: middle;
     font-size: 35px;
     font-family: 'Istok Web', sans-serif;
@@ -37,16 +41,16 @@ html {
     color: #000;
     text-transform: uppercase;
     justify-content: center;
+    width: 200px;
 }
 
 .SelectID{
-    width: 281px;
+    width: 100%;
     height: 38px;
     border-radius: 20px;
     border: 1px solid rgba(205, 205, 205, 0.17);
     background: #FFF;
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.10) inset;
-
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     Outline: none;
 }
@@ -108,6 +112,7 @@ select:not(:has(option[value=""]:checked)) {
     margin-right: 0px;
     justify-content: flex-start;
     position: relative;
+    width: 0;
 }
 .Date2 {
     margin-right: 0px;
