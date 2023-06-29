@@ -28,6 +28,7 @@ html {
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
+    height: max-content;
 }
 
 #Content{
@@ -93,7 +94,7 @@ html {
     flex-shrink: 0;
     color: #000;
     font-size: 20px;
-    font-family: 'Istok Web', sans-serif;
+    font-family: 'Istok Web Bold', sans-serif;
     font-variant: small-caps;
     line-height: 212.5%;
     letter-spacing: -0.5px;
@@ -120,7 +121,6 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom:5px solid #9D1A31;
 }
 #img p{
     margin: 0px;
@@ -149,8 +149,10 @@ html {
 
 #event{
     width: 20%;
+    height: max-content;
 }
 #discussions{
+    min-height: 100%;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -160,8 +162,43 @@ html {
 .discussion{
     width: 100%;
     height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+#border{
+    height: 100%;
+    width: 90%;
+    border-right: 4px solid #006C4F;
+}
+.discussion div div{
+    padding: 20px;
+}
+.discussion div div p{
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-family: 'Istok Web Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 5px;
+}
+.discussion div div #Dis{
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Istok Web Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .shadow{
     box-shadow: 0px 0px 21px 0.5px rgba(0, 0, 0, 0.08);
+}
+
+b{
+    margin: 0px;
+    color: #000;
+    font-size: 12px;
+    font-family: 'Istok Web Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
