@@ -44,5 +44,48 @@ const slides = document.querySelectorAll('.switchpic-slide');
               buttons[i].classList.remove('activee');
           }
       }
-  }
+  };
 
+  // var showPopupButton = document.getElementById('showPopupButton');
+  // var popupBackground = document.getElementById('popupBackground');
+  // var popupWindow = document.getElementById('popupWindow');
+  // var closeButton = document.getElementById('closeButton');
+  
+  // showPopupButton.addEventListener('click', function() {
+  //   popupBackground.style.display = 'block';
+  //   popupWindow.style.display = 'block';
+  // });
+  
+  // closeButton.addEventListener('click', function() {
+  //   popupBackground.style.display = 'none';
+  //   popupWindow.style.display = 'none';
+  // });
+
+  var showPopupButton = document.getElementById('showPopupButton');
+var popupBackground = document.getElementById('popupBackground');
+var popupWindow = document.getElementById('popupWindow');
+var closeButton = document.getElementById('closeButton');
+
+showPopupButton.addEventListener('click', function() {
+  disableScroll(); // Запретить прокрутку страницы при открытии всплывающего окна
+  popupBackground.style.display = 'block';
+  popupWindow.style.display = 'block';
+});
+
+closeButton.addEventListener('click', function() {
+  enableScroll(); // Включить прокрутку страницы при закрытии всплывающего окна
+  popupBackground.style.display = 'none';
+  popupWindow.style.display = 'none';
+});
+
+// Запретить прокрутку страницы
+function disableScroll() {
+  document.documentElement.style.overflow = 'hidden';  // для IE, Firefox, Chrome, Safari
+  document.body.scroll = "no";  // для остальных браузеров
+}
+
+// Включить прокрутку страницы
+function enableScroll() {
+  document.documentElement.style.overflow = 'auto';  // для IE, Firefox, Chrome, Safari
+  document.body.scroll = "yes";  // для остальных браузеров
+}
