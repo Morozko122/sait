@@ -6,13 +6,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой сайт</title>
+    <link rel="stylesheet" href="./res/css/obr_pr.css">
     <link rel="stylesheet" href="./res/css/obr_page.css">
     <link rel="stylesheet" href="./res/css/general.css">
     <link rel="stylesheet" href="./res/css/style.css">
-    <link rel="stylesheet" href="./res/css/obr_pr.css">
     <link rel="stylesheet" href="./res/css/news_style.css">
+    <link rel="stylesheet" href="./res/css/style-about.css">
+    <link rel="stylesheet" href="/res/css/style.css">
 </head>
+<script>
+    function toggleDetails() {
+        var details = document.getElementById('details');
+        var button = document.getElementById('toggleButton');
 
+        if (details.classList.contains('hidden')) {
+            details.classList.remove('hidden');
+            button.textContent = 'скрыть';
+        } else {
+            details.classList.add('hidden');
+            button.textContent = 'подробнее...';
+        }
+    }
+</script>
 <body>
     <!-- HEADER -->
 
@@ -62,49 +77,152 @@
                         <li><a href="#">Дополнительное образование</a></li>
                         <li><a href="#">Президентская программа</a></li>
                         <li><a href="#">Рабочие профессии</a></li>
-                    </ul>
+                </ul>
             
         </div>
-        <div id="mainbody">
-            <h1>Бурение горизонтальных скважин 21.02.01</h1>
-            <div class="container">
-                <div class="box">
-                    <div class="row">
-                        <img src="./res/images/icons8-clock-96 1.png" alt="Изображение 1" class="image">
-                        <div class="text">5484 часов</div>
-                      </div>
-                      <div class="row">
-                        <img src="./res/images/icons8-receive-dollar-100 1.png" alt="Изображение 2" class="image">
-                        <div class="text">30 000 ₽</div>
-                      </div>
-                      
+        <div>
+            <div id="mainbody">
+                <h1>Бурение горизонтальных скважин 21.02.01</h1>
+                <div class="container">
+                    <div class="box">
+                        <div class="row">
+                            <img src="./res/images/icons8-clock-96 1.png" alt="Изображение 1" class="image">
+                            <div class="text">5484 часов</div>
+                          </div>
+                          <div class="row">
+                            <img src="./res/images/icons8-receive-dollar-100 1.png" alt="Изображение 2" class="image">
+                            <div class="text">30 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="box box2" id="box_mid">
+                        <div class="row">
+                            <div class="text_1">форма обучения:</div>
+                            <div class="text">заочная заочная заочная</div>
+                          </div>
+                          <div class="row">
+                            <div class="text_1" >старт:</div>
+                            <div class="text">12.09.2021</div>
+                          </div>
+                    </div>
+                    <div class="box box2" id="box_right">
+                        <div class="row">
+                            <div class="text_1">срок обучения:</div>
+                            <div class="text">2 года 6 месяцев</div>
+                          </div>
+                          <div class="row">
+                            <div class="text_1" >форма обучения:</div>
+                            <div class="text">магистратура</div>
+                          </div>
+                    </div>
                 </div>
-                <div class="box box2" id="box_mid">
-                    <div class="row">
-                        <div class="text_1">форма обучения:</div>
-                        <div class="text">заочная заочная заочная</div>
-                      </div>
-                      <div class="row">
-                        <div class="text_1" >старт:</div>
-                        <div class="text">12.09.2021</div>
-                      </div>
+                
+                <div id="view_text">
+                    Любите киберспорт и компьютерные игры? Поступайте на факультет, где идеры и кумиры игрового мира научат вас зарабатывать в любой точке мира на том, что вы действительно любите. 
+                    <br>Это возможность сделать из хобби востребованную профессию. Рынок киберспорта растет на 25−40% в год и ему не хватает управленцев,проджект-менеджеров, ивент-специалистов и маркетологов.
+                    <br>
+                    <br>
+                    КЛЮЧЕВЫЕ ДИСЦИПЛИНЫ:<br>
+                    - Event-менеджмент в игровой индустрии и киберспорте<br> - Менеджмент киберспортивных команд<br> - Финансовый менеджмент в киберспорте
+                    <nav id="details" class="hidden">
+                        ОПА
+                    </nav>
+                    <nav id="toggleButton" class="button-link" onclick="toggleDetails()">подробнее...</nav>
                 </div>
-                <div class="box box2" id="box_right">
-                    <div class="row">
-                        <div class="text_1">срок обучения:</div>
-                        <div class="text">2 года 6 месяцев</div>
-                      </div>
-                      <div class="row">
-                        <div class="text_1" >форма обучения:</div>
-                        <div class="text">магистратура</div>
-                      </div>
+                <div id="form_z">
+                    <h1>подать заявку НА ОБРАЗОВАТЕЛЬНУЮ ПРОГРАММУ</h1>
+                    <div id ="question">
+                        <div id = "smallInp2">
+                            <input type="text" class="textInputSmall" name="nameInput" placeholder="Введите имя..">
+                            <input type="text" class="textInputSmall" name="mnumberInput" placeholder="Введите номер телефона..">
+                            <input type="text" class="textInputSmall" name="emailInput" placeholder="Введите e-mail..">
+                            <button class="styled-button1">Отправить</button>
+                        </div>
+                        <div id ="personalAccept">
+                            <input type="checkbox" id="Checkbox" name="Checkbox">
+                            <nav style="padding-left: 20px;">Я согласен на обработку персональных данных. <br><a href="">Закон о персональных данных.</a></nav>                       
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <p>Любите киберспорт и компьютерные игры? Поступайте на факультет, где идеры и кумиры игрового мира научат вас зарабатывать в любой точке мира на том, что вы действительно любите.
-                Это возможность сделать из хобби востребованную профессию. Рынок киберспорта растет на 25−40% в год и ему не хватает управленцев,проджект-менеджеров, ивент-специалистов и маркетологов.</p>
-            
+            </div>
+            <div id="dop_content">
+                <div id="con">
+                    <h1>Документы об образовании</h1>
+                    <p>Текст</p>
+                    <h1>Карьера</h1>
+                    <div id="img"></div>
+                    <h1>Вступительные испытания</h1>
+                    <nav id="text">математика / физика или информатика и информационно-коммуникационные технологии (ИКТ) русский язык / история / обществознание</nav>
+                    <div id ="question">
+                        <h1>Хотите задать вопрос?</h1>
+                        <div id = "smallInp">
+                            <input type="text" class="textInputSmall" name="nameInput" placeholder="Введите имя..">
+                            <input type="text" class="textInputSmall" name="mnumberInput" placeholder="Введите номер телефона..">
+                            <input type="text" class="textInputSmall" name="emailInput" placeholder="Введите e-mail.." style="margin-right: 0;">
+                        </div>
+                        <div id ="bigInp">
+                            <textarea id="textAreaForQuestion" name="questionArea" placeholder="Напишите свой вопрос.."></textarea>
+                    </div>
+                      <div id ="personalAccept">
+                         <input type="checkbox" id="Checkbox" name="Checkbox">
+                        <p>Я согласен на обработку персональных данных. <br><a href="">Закон о персональных данных.</a></p>
+                        </div>
+                        <button class="styled-button">Отправить</button>
+                    </div>
+                </div> 
+            </div>
+            <div style="margin: 45px;">
+                <h1>Актуальные программы</h1>
+                <div id="education">
+                    <div class="cards">
+                        <div class="card" style="background-image: url('./res/images/obr1.png')" >
+                            <div class="text">
+                                <h4>Нефтегазовое дело</h4>
+                                <p>Описание создано для описания программыfdsfdsfds fsd аволыаывроарывия программыfdsfdsfds fsd аволыаывроарывлоравыр алвыаывлорал оывралыврлда рывлд аывия программыfdsfdsfds fsd аволыаывроарывлоравыр алвыаывлорал оывралыврлда рывлд аывия программыfdsfdsfds fsd аволыаывроарывлоравыр алвыаывлорал оывралыврлда рывлд аывлоравыр алвыаывлорал оывралыврлда рывлд аывдf sdf sd sd sd f456787654f sdf sd fsd fds f sdwefrgth fdsnjt54rfg</p>
+                            <div class = "bottomtext"><a href="#">
+                                Подобнее
+                                <img src="./res/images/Arrow 1.svg">
+                            </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-image: url('./res/images/obr2.png')">
+                            <div class="text">
+                                <h4>Нефтегазовое дело</h4>
+                                <p>Описание создано для описания программыfdsfdsfds fsd аволыаывроарывия программыfdsfdsfds fsd аволыаывроарывлоравыр алвыаывлорал оывралыврлда рывлд аывия программыfdsfdsfds fsd аволыаывроарывлоравыр алвыаывлорал оывралыврлда рывлд аывия программыfdsfdsfds fsd аволыаывроарывлоравыр алвыаывлорал оывралыврлда рывлд аывлоравыр алвыаывлорал оывралыврлда рывлд аывдf sdf sd sd sd f456787654f sdf sd fsd fds f sdwefrgth fdsnjt54rfg</p>   
+                                <div class = "bottomtext"><a href="#">
+                                    Подобнее
+                                    <img src="./res/images/Arrow 1.svg">
+                                </a>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="card" style="background-image: url('./res/images/obr3.png')">
+                            <div class="text">
+                                <h4>Нефтегазовое дело</h4>
+                                <p>Описание создано для описания программыfdsfdsfds fsd аволыаывроарывия программыfdsfdsfds fsd аволыаывроарывлоравыр алвыаывлорал оывралыврлда рывлд аывия программыfdsfdsfds fsd аволыаывроарывлоравыр алвыаывлорал оывралыврлда рывлд аывия программыfdsfdsfds fsd аволыаывроарывлоравыр алвыаывлорал оывралыврлда рывлд аывлоравыр алвыаывлорал оывралыврлда рывлд аывдf sdf sd sd sd f456787654f sdf sd fsd fds f sdwefrgth fdsnjt54rfg</p>
+                                <div class = "bottomtext"><a href="#">
+                                    Подобнее
+                                    <img src="./res/images/Arrow 1.svg">
+                                </a>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="card" style="background-image: url('./res/images/obr4.png')">
+                            <div class="text">
+                                <h4>Нефтегазовое дело</h4>
+                                <p>Описание создано для описания программы описания программы</p>    
+                                <div class = "bottomtext"><a href="#">
+                                    Подобнее
+                                    <img src="./res/images/Arrow 1.svg">
+                                </a>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>        
+    </div>
     <!-- FOOTER -->
     <footer>
         <div class="left-content">
