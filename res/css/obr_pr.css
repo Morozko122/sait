@@ -67,8 +67,12 @@ text-transform: uppercase;
   padding-bottom: 30px;
 }
 
-.hidden {
-  display: none;
+#details{
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 12em;
 }
 
 #view_text{
