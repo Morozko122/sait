@@ -1,0 +1,75 @@
+#Filter{
+    width: calc(100% - 60px);
+    display: grid;
+    grid-template-rows: repeat(2, 38px);
+    grid-template-columns: repeat(4, 25%);
+    gap: 20px;
+}
+
+.Block{
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+}
+.Block input{
+    width: 100%;
+}
+
+.SelectID{
+    width: 100%;
+    height: 38px;
+    border-radius: 20px;
+    border: 1px solid rgba(205, 205, 205, 0.17);
+    background: #FFF;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.10) inset;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    Outline: none;
+}
+.Search{
+    padding: 0;
+    text-indent: 16px;
+    box-sizing: border-box;
+}
+
+select {
+    color: gray;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: 1px solid #ccc;
+    padding-left: 18px;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.SelectID:hover{
+    color: rgb(0, 0, 0);
+    background: #e0e0e034;
+}
+
+select option:first-child{
+    color: gray;
+}
+select option:not(:first-child){
+    color: #000000;
+}
+
+select:not(:has(option[value=""]:checked)) {
+    color: #000000;
+}
+
+.Select {
+    position: relative;
+}
+
+.select_arrow {
+    position: absolute;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 7px 4px 0px 4px;
+    border-color: #000000 transparent transparent transparent;
+}
