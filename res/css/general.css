@@ -12,7 +12,7 @@ html {
   line-height: 80%;
   text-transform: uppercase;
 }
-#mainbody .cards {
+/* #mainbody .cards {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -86,4 +86,4 @@ html {
   
   #mainbody .bottomtext img {
     margin-left: 20px;
-  }
+  } */
