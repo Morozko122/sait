@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Мой сайт</title>
+        <link rel="stylesheet" href="/css/general.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/obr_pr.css">
+        <link rel="stylesheet" href="/css/news_style.css">
+    </head>
+    
+    <body>
+        <!-- HEADER -->
+        @await Html.PartialAsync("header")
+        <!-- CONTENT -->
+        <div id="content">
+            <div id="menu_left">
+            <ul>
+                <li><a href="/help_entrant/" class="activ_a">Справка абитуриенту</a></li>
+                <li><a href="/obr_list/">Образовательные программы</a></li>
+                <li><a href="/higher_education/">Высшее образование дистанционно</a></li>
+                <li><a href="/additional_education/">Дополнительное образование</a></li>
+                <li><a href="/presidential_program/">Президентская программа</a></li>
+                <li><a href="/working_professions/">Рабочие профессии</a></li>
+            </ul>
+            </div>
+            <div id="mainbody">
+                <h1>Справка абитуриенту</h1>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        @await Html.PartialAsync("footer")
+    </body>
+</html>
