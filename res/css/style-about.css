@@ -53,6 +53,7 @@ body {
   line-height: 200%;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 #contacts .contacts-block {
