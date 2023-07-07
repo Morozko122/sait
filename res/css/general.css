@@ -2,17 +2,7 @@ body,
 html {
   height: 100%;
 }
-#mainbody h1 {
-  margin: 0;
-  color: #000;
-  font-size: 32px;
-  font-family: 'Istok Web', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 80%;
-  text-transform: uppercase;
-}
-/* #mainbody .cards {
+#mainbody .cards {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -86,4 +76,4 @@ html {
   
   #mainbody .bottomtext img {
     margin-left: 20px;
-  } */
+  }
